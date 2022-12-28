@@ -36,7 +36,7 @@ public class EstudiosController {
  
     @GetMapping ("/buscarEstudio/{id}") // ver solo 1 item
     @ResponseBody // localhost:8080/buscarEstudio/4
-    public Estudios buscarEstudio (@PathVariable Long id) {
+    public Estudios buscarEstudio (@PathVariable long id) {
         return estudiosServ.buscarEstudio( id );
     }
 
@@ -46,7 +46,7 @@ public class EstudiosController {
     }
 
     @DeleteMapping ("/borraEstudio/{id}")   // peticion para borrar item´s
-    public void borraEstudio (@PathVariable Long id) {    // DELETE localhost:8080/borraEstudio?=4
+    public void borraEstudio (@PathVariable long id) {    // DELETE localhost:8080/borraEstudio?=4
         estudiosServ.borraEstudio(id);
     }
 }

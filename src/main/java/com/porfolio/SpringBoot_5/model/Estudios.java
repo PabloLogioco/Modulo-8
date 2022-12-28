@@ -14,7 +14,7 @@ public class Estudios {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private long id;
     
     private String anio;
     private String institucion;
@@ -23,7 +23,7 @@ public class Estudios {
     public Estudios() {
     }
 
-    public Estudios(Long id, String anio, String institucion, String detalle) {
+    public Estudios(long id, String anio, String institucion, String detalle) {
         this.id = id;
         this.anio = anio;
         this.institucion = institucion;

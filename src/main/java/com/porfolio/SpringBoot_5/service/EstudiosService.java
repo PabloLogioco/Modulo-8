@@ -23,7 +23,7 @@ public class EstudiosService implements IEstudiosService {
     }
 
     @Override
-    public void borraEstudio(Long id) {
+    public void borraEstudio(long id) {
         estudiosRepo.deleteById(id);
     }
 
@@ -33,7 +33,7 @@ public class EstudiosService implements IEstudiosService {
     }
 
     @Override
-    public Estudios buscarEstudio(Long id) {
+    public Estudios buscarEstudio(long id) {
         return estudiosRepo.findById(id).orElse(null);
     }
 
